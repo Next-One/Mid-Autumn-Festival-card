@@ -1,4 +1,3 @@
-```
 # Mid-Autumn-Festival-card
 WeChat applet for Mid Autumn Festival card sharing---微信小程序中秋贺卡分享
 
@@ -20,5 +19,3 @@ WeChat applet for Mid Autumn Festival card sharing---微信小程序中秋贺卡
 微信提供开放数据接口，可以在用户的同意下导入用户数据；但是由于该入口特别深，使用率不足5%，几乎所有用户都是以游客身份来进行操作的，游客会默认有一个用户名和头像。
 ### 6.bug提交
 这个功能除了我测试使用外，无人使用。也对，用户只是想发贺卡，只需要把贺卡做好看就可以了。由于把时间浪费在这些事情上，最终导致贺卡模板只有6个，也就匆忙上线了。
-
-```
