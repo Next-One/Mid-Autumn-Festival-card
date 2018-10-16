@@ -1,0 +1,178 @@
+.hidden {
+  overflow: hidden;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.none {
+  display: none;
+}
+
+.z99 {
+  z-index: 99;
+}
+
+.z-10{
+  z-index: -10
+}
+
+.h100 {
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.wh100, .wh, .ptlwh {
+  height: 100%;
+  width: 100%;
+}
+
+.ptlwh, .ptl {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fs22, .tip {
+  font-size: 26rpx;
+}
+
+.fs24, page {
+  font-size: 28rpx;
+}
+
+.fs26 {
+  font-size: 30rpx;
+}
+
+.fs28 {
+  font-size: 32rpx;
+}
+
+.fs36 {
+  font-size: 36rpx;
+}
+
+.fs60{
+  font-size: 60rpx;
+}
+
+.fs20 {
+  font-size: 24rpx;
+}
+
+.fs18 {
+  font-size: 22rpx;
+}
+
+.c999, .tip {
+  color: #999;
+}
+
+.c05 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.ceee {
+  color: #eee;
+}
+
+.cfff {
+  color: #fff;
+}
+
+bg32c {
+  height: 32rpx;
+  width: 32rpx;
+  background-size: cover;
+  background-position: center;
+}
+
+.line-12, .line-24 {
+  background: #ebebeb;
+}
+
+.line-24, .line-24-w {
+  height: 24rpx;
+}
+
+.line-12 {
+  height: 12rpx;
+}
+
+/* 子元素水平垂直居中,纵向排列 */
+
+.fcc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 子元素水平垂直居中,横向排列 */
+
+.frc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.frc-s {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fcc-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.frj{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.stff {
+  font-family: 'STXingkai', 'Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif;
+}
+
+/* 渐变色背景代替纯色背景 */
+
+.line-bg-1 {
+  background: linear-gradient(135deg, #e687ee, #a34ae0);
+}
+
+.line-bg-2 {
+  background: linear-gradient(135deg, #fd98ba, #f95385);
+}
+
+.line-bg-3 {
+  background: linear-gradient(135deg, #75e4d7, #32a8d7);
+}
+
+.line-bg-4 {
+  background: linear-gradient(135deg, #ffa05e, #ff4d32);
+}
+
+.line-bg-5 {
+  background: linear-gradient(135deg, #f48173, #f42221);
+}
+
+.line-bg-6 {
+  background: linear-gradient(135deg, #9fe431, #52d11c);
+}
+
+.line-bg-7 {
+  background: linear-gradient(135deg, #cde7b0, #b8f422);
+}

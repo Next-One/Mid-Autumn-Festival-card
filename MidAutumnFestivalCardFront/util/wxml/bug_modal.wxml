@@ -1,0 +1,12 @@
+<modal title="BUG提交" cancel-text="" confirm-text="" hidden="{{hidden}}">
+  <view class='edit-card fs28'>
+    <form bindsubmit="submitToView">
+      <view class="send-info">
+        <view class="item-wrap frj">
+          <textarea class='textarea' name="desc"  focus='{{focus}}' placeholder-style='color:#cccccc;font-size:28rpx;'  maxlength='80' placeholder="BUG的详细信息，方便排查！" value=""/>
+        </view>
+      </view>
+      <button type='primary' bindtap='refreshView' formType="submit" size="default" class="submit-btn">提交</button>
+    </form>
+  </view>
+</modal>

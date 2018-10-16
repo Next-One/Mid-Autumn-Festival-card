@@ -1,0 +1,63 @@
+<view class="card-area {{refresh}}">
+  <view class="ani-list-bg">
+    <view class="ani-list-item" style="width: 376px; height: 520px; left: -27px; top: -19px; animation: fadeIn 0.8s ease 0s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/FjTxXcdxGbDb77YEmP2xojI_ENlk.png" style="width: 376px; height: 520px;"></image>
+    </view>
+    <view class="ani-list-item" style="width: 374px; height: 502px; left: -27px; top: -19px;animation: fadeIn 1s ease 0s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/o_1bh5691224rm1btu1j2li7d1drgu.gif" style="width: 374px; height: 589px;">
+      </image>
+    </view>
+    <view class="ani-list-item" style="width: 282px;top: 19px; left: 19px; animation: fadeInLeft 0.8s ease 0.2s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/FpqxxdkD_K3wKuN4yT0YBGK1ewV5.png" style="width: 282px; height: 442px;"></image>
+    </view>
+    <view class="ani-list-item" style="width: 280px; left: -63px; top: 444px;animation: fadeInUp 1s ease .4s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/FlgnDPazfpGB-sSd8ixk4WsxCTpA.png" style="width: 280px; height: 63px;">
+      </image>
+    </view>
+    <view class="ani-list-item" style="width: 280px;top: 444px; left: 149px; animation: fadeInUp 1s ease .4s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/FlgnDPazfpGB-sSd8ixk4WsxCTpA.png" style="width: 280px; height: 63px;">
+      </image>
+    </view>
+    <view class="ani-list-item" style="width: 69px;top: 237px; left: 16px; animation: fadeInLeft 1s ease .6s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/FpyXRfPMdHX3uPZQVTAKRNAx13Vd.png" style="width: 69px; height: 30px;">
+      </image>
+    </view>
+    <view class="ani-list-item" style="width: 97px;top: 15px; left: 69px; animation: fadeInRight 1s ease .8s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/FvDYGLhGcre091RhXwToNL9IWfH9.png" style="width: 184px; height: 255px;">
+      </image>
+    </view>
+    <view class="ani-list-item" style="width: 134px; top: 25px; left: -30px; animation: fadeInLeft 1s ease 1s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/FjynS9ZAAQ3yZFsM7HUUCWNM9WIV.png" style="width: 134px; height: 69px;">
+      </image>
+    </view>
+    <view class="ani-list-item" style="width: 146px; top: 25px; left: 207px; animation: fadeInRight 1s ease 1.2s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/Fq0gfmMYtDfdUfBVTSuzDYFxn-BA.png" style="width: 146px; height: 75px;">
+      </image>
+    </view>
+    <view class="ani-list-item" style="width: 283px; top: 19px; left: 19px; animation: fadeIn 1s ease 1.4s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/Fh8wLcAfH4M_3ajlZQbE4xl_E69s.png" style="width: 283px; height: 16px;">
+      </image>
+    </view>
+    <view class="ani-list-item" style="width: 146px; top: 103px; left: 90px; animation: flipInY 1s ease 1.6s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/FmSl0huKPZ11t0VqkLggkZKj7NcV.png" style="width: 146px; height: 144px; ">
+      </image>
+    </view>
+    <view class="ani-list-item" style="width: 236px; left: 36px; top: 272px; animation: zoomIn 1s ease 1.8s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/o_1bquujku1cbs1r2d143bnk21ggq9.png" style="width: 236px; height: 40px; ">
+      </image>
+    </view>
+    <view class="ani-list-item zfy4ch-wrap">
+      <view class="ch-text">{{friendName}}</view>
+    </view>
+    <view class="ani-list-item zfy4con-wrap">
+      <view class="content-text">{{said}}</view>
+    </view>
+    <view class="ani-list-item" style=" width: 310px; top: 424px; left: 10px; animation: zoomIn 1s ease 2.6s 1 normal both running;">
+      <view class="bottom-tip-txt">花好月圆夜·情深意浓时</view>
+    </view>
+    <view class="ani-list-item" style="top: 405px; left:0; animation: zoomIn 1s ease 2.4s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme3/tip.png" style="width: 360px; height: 12px; ">
+      </image>
+    </view>
+  </view>
+</view>

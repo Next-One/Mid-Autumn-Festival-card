@@ -1,0 +1,25 @@
+.txt-border {
+  color: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.btn-group {
+  margin: 16rpx 0 0;
+  width: 322px;
+}
+
+.share-group .btn-wrap{
+  width: 150px;
+}
+.send-group .btn-wrap{
+  width: 100px;
+}
+.btn-wrap botton{
+  width: 100%;
+}
+
+.min-btn {
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 36rpx;
+}

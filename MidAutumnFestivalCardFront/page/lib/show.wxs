@@ -1,0 +1,190 @@
+// 2018-09-15T07:14:45.000Z
+var handleTime = function(datetime, dateDiff) {
+  datetime += "";
+  var date = datetime.substring(0, 10),
+    hour = parseInt(datetime.substring(11, 13)),
+    min = datetime.substring(13, 16);
+  hour = hour + 8 >= 24 ? hour - 16 : hour + 8;
+  switch (dateDiff) {
+    case 0:
+      date = '今天';
+      break;
+    case 1:
+      date = '昨天';
+      break;
+    case 2:
+      date = '前天';
+      break;
+    default:
+  }
+  return date + " " + hour + min;
+}
+
+var r = function(arr) {
+  var idx = Math.floor(Math.random() * arr.length);
+  return arr[idx]
+}
+
+var modal = function(card, item) {
+  if (card) {
+    switch (item) {
+      case "nocancel":
+        return false;
+      case "showTheme":
+        return "";
+      case "showNone":
+        return "none";
+      case "modalTitle":
+        return "恭喜您获得一张卡片";
+      case "cancelText":
+        return "再看看";
+      case "confirmText":
+        return "去编辑";
+      case "bindconfirm":
+        return "toTheme";
+      default:
+        return ""
+    }
+  } else {
+    switch (item) {
+      case "nocancel":
+        return true;
+      case "showTheme":
+        return "none";
+      case "showNone":
+        return "";
+      case "modalTitle":
+        return "空空如也";
+      case "cancelText":
+        return "";
+      case "confirmText":
+        return "继续抽";
+      case "bindconfirm":
+        return "cancel";
+      case "tipText":
+        if (Math.random() > 0.5) {
+          return "o(╥﹏╥)o 为什么还是空！"
+        } else if (Math.random() > 0.5) {
+          return "(*>﹏<*) 这个泡泡是假的吧！"
+        } else {
+          return "(⊙▂⊙) 不要再看到这个了！"
+        }
+      default:
+        return ""
+    }
+  }
+}
+
+var h = function(_ture, item) {
+  if (_ture == true) {
+    switch (item) {
+      case "list.empty":
+        return "";
+      case "list.noEmpty":
+        return "none";
+      case "theme.shareEnter":
+        return "";
+      case "theme.selectEnter":
+        return "none";
+      default:
+        return ""
+    }
+  } else {
+    switch (item) {
+      case "list.empty":
+        return "none";
+      case "list.noEmpty":
+        return "";
+      case "theme.shareEnter":
+        return "none";
+      case "theme.selectEnter":
+        return "";
+      default:
+        return "none"
+    }
+  }
+}
+
+var oid = function(id) {
+  var len = id.length;
+  var l4 = "********" + id.substring(len - 4)
+  return l4;
+}
+
+var level = function(receive, send) {
+  var all = receive + send;
+  var len = Math.ceil(all / 5.0);
+  len = len > 8 ? 8 : len;
+  len = len == 0 ? 1 : len;
+  var arr = [];
+  for (var i = 0; i < len; i++) {
+    arr[i] = i;
+  }
+  return arr;
+}
+
+var na = function(url, content) {
+  switch (content) {
+    case "name":
+      return !url || url == "" ? "游客" : url;
+    case "url":
+      return !url || url == "" ? "/img/theme/cardmin5.png" : url;
+  }
+}
+
+var src = function(id) {
+  return "/util/wxml/theme_" + id + ".wxml"
+}
+
+
+function randomInRange(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function random(min, max) {
+  return Math.random() * (max - min) + min;
+}
+
+function getRGBA(r) {
+  var R, G, B, A;
+  if (r > 0.67) {
+    R = randomInRange(0, 150);
+    G = randomInRange(150, 255);
+    B = 255;
+    A = random(0.6, 0.9);
+    return "rgba(" + R + "," + G + "," + B + "," + A + ")"
+  } else if (r > 0.33) {
+    R = 255;
+    G = randomInRange(100, 240);
+    B = randomInRange(150, 255);
+    A = random(0.6, 0.9);
+    return "rgba(" + R + "," + G + "," + B + "," + A + ")"
+  } else {
+    R = randomInRange(0, 150);
+    G = 255;
+    B = randomInRange(150, 255);
+    A = random(0.6, 0.9);
+    return "rgba(" + R + "," + G + "," + B + "," + A + ")"
+  }
+
+}
+var rgbaArr = function(num) {
+  var a = [];
+  var r = Math.random();
+  for (var i = 0; i < num; i++) {
+    a[i] = getRGBA(r);
+  }
+  return a;
+}
+
+module.exports = {
+  handleTime: handleTime,
+  modal: modal,
+  h: h,
+  r: r,
+  oid: oid,
+  level: level,
+  na: na,
+  src: src,
+  rgbaArr: rgbaArr
+}

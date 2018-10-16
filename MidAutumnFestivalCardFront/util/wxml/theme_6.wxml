@@ -1,0 +1,25 @@
+<view class="card-area {{refresh}}">
+  <view class="ani-list-bg">
+    <view class="ani-list-item" style="left: 0; top: 0; animation: fadeIn 2s ease 0s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme6/yq0KX1XzBYKAeu7JAAJ5rTs2COA134.jpg" style="width: 320px; height: 504px;"></image>
+    </view>
+    <view class="ani-list-item" style="left: 0; top: 0; animation: fadeIn 2s ease 1s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme6/yq0KZFXzBaeAXudNAACrDJlyHAI200.jpg" style="width: 320px; height: 504px;">
+      </image>
+    </view>
+    <view class="ani-list-item" style="left: 100px; top: 30px; animation: fadeInRight 1s ease 1.2s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme4/yq0KXVYDcjeAV39wAAB9zqPCIRc396.png" style="width: 140px;height:140px; ">
+      </image>
+    </view>
+    <view class="ani-list-item" style="left: 20px; top: 40px; animation: fadeInLeft 1s linear 1.6s 1 normal both running;">
+      <image src="https://app.h5i.cc/img/theme6/yq0KXVXzAJOAMod4AAAPItwLfu0017.png" style="height: 100px;width:36px;">
+      </image>
+    </view>
+    <view class="ani-list-item" style="top: 230px; left: 23px;animation: fadeIn 2s ease 2.5s 1 normal both running">
+      <view class="zfy6-wrap">
+        <view class="fs60">{{friendName}}</view>
+        <view class="content-text">{{said}}</view>
+      </view>
+    </view>
+  </view>
+</view>

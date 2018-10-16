@@ -1,0 +1,24 @@
+/* 编辑贺卡 */
+
+.edit-card {
+  width: 556rpx;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+}
+
+.textarea {
+  min-height: 110rpx;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4rpx;
+  height: 50rpx;
+  padding: 10rpx;
+}
+.item-wrap{
+  padding: 20rpx;
+}
+.submit-btn {
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #fff;
+}

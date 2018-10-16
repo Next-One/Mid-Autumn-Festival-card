@@ -1,0 +1,17 @@
+<modal title="编辑贺卡" cancel-text="" confirm-text="" hidden="{{hidden}}">
+  <view class='edit-card fs28'>
+    <form bindsubmit="submitToView">
+      <view class="send-info">
+        <view class="item-wrap frj">
+          <label>好友称呼</label>
+          <input type="text" name="friendName" placeholder="朋友" maxlength="10" class="input" placeholder-style="color:#cccccc;font-size:28rpx;" focus="{{focus}}" />
+        </view>
+        <view class="item-wrap frj">
+          <label>想说的话</label>
+          <textarea class='textarea input' name="said"  placeholder-style='color:#cccccc;font-size:28rpx;' auto-height maxlength='80' placeholder="{{said}}" value=""/>
+        </view>
+      </view>
+      <button type='primary' bindtap='refreshView' formType="submit" size="default" class="submit-btn">预 览 效 果</button>
+    </form>
+  </view>
+</modal>

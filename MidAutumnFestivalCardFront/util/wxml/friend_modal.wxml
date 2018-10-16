@@ -1,0 +1,4 @@
+<modal title="保存到相册" cancel-text="取消" confirm-text="确认" bindcancel="friendCancel" bindconfirm="savePhoto" no-cancel="{{friendCancel}}" hidden="{{friendHidden}}">
+<view class='image-friend-wrap'>
+  <image class='friend-img' mode="aspectFit" src="{{shareImgSrc}}"></image></view>
+</modal>

@@ -1,0 +1,221 @@
+.zfy1-wrap {
+  position: absolute;
+  left: 80px;
+  top: 260px;
+}
+
+.zfy1-wrap .heng-text {
+  width: 180px;
+  height: 180px;
+  font-size: 12px;
+  color: rgb(245, 222, 122);
+  overflow: hidden;
+  animation: wfy1-height-add 3s linear 3.5s 1 normal both running;
+}
+
+.zfy1-wrap .content-text {
+  letter-spacing: 2px;
+  line-height: 18px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  text-indent: 28px;
+}
+
+.zfy1-wrap .ch-text {
+  font-size: 16px;
+  overflow: hidden;
+  letter-spacing: 4px;
+  max-height: 20px;
+}
+
+@keyframes wfy1-height-add {
+  0% {
+    opacity: 0.8;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 180px;
+  }
+}
+
+/* 祝福语2 */
+
+.zfy2-wrap {
+  position: absolute;
+  left: 80px;
+  top: 324px;
+}
+
+.zfy2-wrap .heng-text {
+  width: 180px;
+  height: 180px;
+  font-size: 24rpx;
+  color: rgb(255, 236, 75);
+  overflow: hidden;
+  animation: wfy2-height-add 3s linear 2.5s 1 normal both running;
+}
+
+.zfy2-wrap .content-text {
+  letter-spacing: 4rpx;
+  line-height: 36rpx;
+  text-shadow: 0 0 2rpx rgba(0, 0, 0, 0.2);
+  text-indent: 56rpx;
+}
+
+.zfy2-wrap .ch-text {
+  font-size: 32rpx;
+  overflow: hidden;
+  letter-spacing: 8rpx;
+  max-height: 40rpx;
+}
+
+@keyframes wfy2-height-add {
+  0% {
+    opacity: 0.8;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: 180px;
+  }
+}
+
+/* 祝福语3 */
+
+.zfy3-wrap {
+  position: absolute;
+  left: 30px;
+  top: 80px;
+}
+
+.zfy3-wrap .shu-text {
+  width: 160px;
+  height: 160px;
+  font-size: 26rpx;
+  color: rgb(181, 37, 29);
+  overflow: hidden;
+  display: flex;
+  text-align: left;
+  animation: zfy3-width-add 2s linear 2s 1 normal both running;
+}
+
+.zfy3-wrap .ch-text {
+  font-size: 32rpx;
+  overflow: hidden;
+  letter-spacing: 4px;
+  display: inline-block;
+  max-width: 40rpx;
+  writing-mode: vertical-lr;
+}
+
+.zfy3-wrap .content-text {
+  display: inline-block;
+  line-height: 28px;
+  padding: 28px 0 0 10px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  writing-mode: vertical-lr;
+}
+
+@keyframes zfy3-width-add {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    width: 160px;
+  }
+}
+/* 祝福语4 */
+
+.zfy4ch-wrap {
+    width: 236px;
+    top: 272px;
+    left: 44px;
+    animation: fadeInRight 1s ease 2s 1 normal both running;
+}
+
+.zfy4con-wrap {
+    width: 236px;
+    top: 320px;
+    left: 44px;
+    animation: fadeInRight 1s ease 2.2s 1 normal both running;
+}
+
+.zfy4con-wrap .content-text {
+    letter-spacing: 2px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    color: #444444;
+    font-size: 12px;
+    text-indent: 28px;
+    line-height: 20px;
+    height: 80px;
+}
+
+.zfy4ch-wrap .ch-text {
+    font-size: 16px;
+    text-align: center;
+    overflow: hidden;
+    letter-spacing: 4px;
+    height: 38px;
+    width: 160px;
+    margin: 0 auto;
+    line-height: 38px;
+    color: rgb(181, 37, 29);
+}
+/* 祝福语5 */
+
+.zfy5ch-wrap {
+  width: 200px;
+  top: 310px;
+  left: 100px;
+  color: rgb(255, 236, 75);
+  animation: fadeInRight 1s ease 1.8s 1 normal both running;
+}
+
+.zfy5con-wrap {
+  width: 200px;
+  top: 340px;
+  color: rgb(255, 236, 75);
+  left: 100px;
+  animation: fadeInRight 1s ease 2s 1 normal both running;
+}
+
+.zfy5con-wrap .content-text {
+  letter-spacing: 2px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  text-indent: 28px;
+  line-height: 20px;
+  height: 80px;
+}
+
+.zfy5ch-wrap .ch-text {
+  font-size: 16px;
+  text-align: center;
+  overflow: hidden;
+  letter-spacing: 4px;
+  width: 160px;
+  margin: 0 auto;
+}
+/*  */
+.zfy6-wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(255,255,255,.9);
+    line-height: 32px;
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-family: 'STXingkai','Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif;
+}
+
+.zfy6-wrap .content-text{
+    text-indent: 40px;
+}
+

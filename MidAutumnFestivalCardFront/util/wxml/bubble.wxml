@@ -1,0 +1,5 @@
+<view class="running-area">
+  <block wx:for="{{show.rgbaArr(bubbleNums)}}" wx:key="*this">
+    <view class="m movep{{index+1}}" style='background-color:{{item}};' catchtap='randomBgId'></view>
+  </block>
+</view>

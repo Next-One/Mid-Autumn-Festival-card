@@ -1,0 +1,40 @@
+@import "/util/wxss/animation.wxss";
+@import "/util/wxss/themes.wxss";
+@import "/util/wxss/zfy.wxss";
+@import "/util/wxss/edit_modal.wxss";
+@import "/util/wxss/btn.wxss";
+
+page,.theme-content {
+  width: 100%;
+  height: 100%;
+}
+
+
+.content {
+  position: relative;
+  height: 486px;
+  width: 322px;
+}
+
+.theme-content{
+  overflow: hidden
+}
+
+.myCanvas{
+  width: 720px;
+  height: 930px;
+  position: absolute;
+  right: 0;
+  top: -2000px; 
+  z-index: 99
+}
+.image-friend-wrap{
+  width: 556rpx;
+  text-align: center;
+}
+
+.friend-img{
+  height: 240px;
+  width: 186px;
+  margin: 0 auto;
+}

@@ -1,0 +1,19 @@
+<view class='btn-group frj share-group' wx:if='{{share}}'>
+  <view class='btn-wrap'>
+    <button type="primary" plain='true' size='default' bindtap='toIndex'>去抽贺卡</button>
+  </view>
+  <view class='btn-wrap'>
+    <button size='default' plain='true' class="txt-border" bindtap='refreshView'>再看一次</button>
+  </view>
+</view>
+<view class='btn-group frj send-group' wx:else>
+  <view class='btn-wrap'>
+    <button plain='true'  class="txt-border" size='default' bindtap='edit'>编 辑</button>
+  </view>
+  <view class='btn-wrap'>
+    <button size='default' type="primary"  plain='true' open-type='share'>分 享</button>
+  </view>
+  <view class='btn-wrap'>
+    <button size='default' plain='true' open-type='writePhotosAlbum' class="txt-border" bindtap='friendQuan'>保存</button>
+  </view>
+</view>

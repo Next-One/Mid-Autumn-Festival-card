@@ -1,0 +1,60 @@
+<wxs src="./../lib/show.wxs" module="show" />
+<modal title="{{show.modal(card,'modalTitle')}}" cancel-text="{{show.modal(card,'cancelText')}}" confirm-text="{{show.modal(card,'confirmText')}}" bindcancel="cancel" bindconfirm="{{show.modal(card,'bindconfirm')}}" no-cancel="{{show.modal(card,'nocancel')}}"
+  hidden="{{hidden}}">
+  <view class="image-wrap {{show.modal(card,'showTheme')}}" style="background-image: url(https://app.h5i.cc/img/theme/card{{currentThemeID}}.jpg)">
+    <image class='image-card' mode="aspectFill" src="/img/theme/card{{currentThemeID}}.png"></image>
+  </view>
+  <view class="none-wrap {{show.modal(card,'showNone')}}">
+    <view class='fcc wh'>
+      <view class='empty-bg {{show.r(emptyBgs)}}'></view>
+      <view class='empty-content fs28'>{{show.modal(card,'tipText')}}</view>
+    </view>
+  </view>
+</modal>
+
+<view class=''></view>
+
+<view class='content c05' style="background-image: url(https://app.h5i.cc/img/index_bg_{{show.r(bgArr)}}.png)">
+  <view class='index-tip fcc-one'>
+    <view class='index-naba bg-naba'></view>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}" interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px" class='swiper-class-index'>
+      <block wx:for="{{tips}}" wx:key="*this">
+        <swiper-item>
+          <view class="swiper-item-index">{{item}}</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='myinfo'>
+    <view catchtap='setInfo' class='ptlwh z99'></view>
+    <view class='watch frc-s'>
+      <!-- <view class='eye-wrap'>
+        <view class='eye bg-eye'></view>
+        <view class='star-list frc'>
+          <view wx:if="{{send+receive>20}}" class='star-item bg-star'></view>
+          <view wx:if="{{send+receive>10}}" class='star-item bg-star'></view>
+          <view wx:if="{{send+receive>=0}}" class='star-item bg-star'></view>
+        </view>
+      </view> -->
+      <view class='userInfo fcc'>
+        <view class='avatar-wrap'>
+          <image class='avatar-image' src='{{avatarUrl}}'></image>
+        </view>
+        <view class='star-list frc'>
+          <view wx:if="{{send+receive>20}}" class='star-item bg-star'></view>
+          <view wx:if="{{send+receive>10}}" class='star-item bg-star'></view>
+          <view wx:if="{{send+receive>=0}}" class='star-item bg-star'></view>
+        </view>
+      </view>
+      <view class='info-desc'>
+        <view class='send-num'>送出贺卡
+          <text class='info-num'>{{send}}</text> 张
+        </view>
+        <view class='send-num'>收到贺卡
+          <text class='info-num'>{{receive}}</text> 张
+        </view>
+      </view>
+    </view>
+  </view>
+  <include src="/util/wxml/bubble.wxml" />
+</view>

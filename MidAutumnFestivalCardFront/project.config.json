@@ -1,0 +1,52 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.93",
+	"appid": "wx973a72e46badd707",
+	"projectname": "zq",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "分享进入页面",
+					"pathName": "page/theme/theme",
+					"query": "friendName=喜子&said=中秋节快乐&themeid=1&sendid=oCyNs5c1vWt4wIU72QUdZojWGcWg",
+					"scene": "1007"
+				},
+				{
+					"id": -1,
+					"name": "分享进入页面",
+					"pathName": "page/theme/theme",
+					"query": "friendName=喜子&said=中秋节快乐&themeid=3",
+					"scene": "1008"
+				}
+			]
+		}
+	}
+}

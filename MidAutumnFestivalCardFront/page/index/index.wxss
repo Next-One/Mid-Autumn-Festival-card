@@ -1,0 +1,143 @@
+@import "/util/wxss/base64.wxss";
+@import "/util/wxss/bubble.wxss";
+
+page, .content {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  background-color: #f6f6f6;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.index-tip, .myinfo {
+  position: absolute;
+  z-index: 99;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.index-tip {
+  height: 90rpx;
+  width: 290rpx;
+  padding-left: 40rpx;
+  top: 60rpx;
+  left: 0;
+  border-radius: 0 45rpx 45rpx 0;
+}
+
+.index-naba {
+  position: absolute;
+  left: 4rpx;
+  width: 36rpx;
+  top: 26rpx;
+  height: 36rpx;
+  background-size: cover;
+}
+
+.swiper-class-index {
+  height: 90rpx;
+  width: 310px;
+}
+
+.swiper-item-index {
+  line-height: 90rpx;
+  font-weight: bold;
+  text-overflow: ellipsis;
+}
+
+.image-wrap {
+  width: 556rpx;
+  height: 680rpx;
+  background-size: 556rpx auto;
+  background-repeat: no-repeat;
+  background: #eee;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+
+.image-card {
+  position: absolute;
+  top: 60rpx;
+  left: 50rpx;
+  width: 456rpx;
+  height: 680rpx;
+  background: #eee;
+}
+
+.none-wrap {
+  width: 556rpx;
+}
+
+.empty-bg {
+  height: 240rpx;
+  width: 240rpx;
+  background-size: cover;
+  margin: 20rpx 0 20rpx;
+}
+
+.myinfo {
+  right: 0;
+  top: 60rpx;
+  padding: 10rpx 0 0 30rpx;
+  border-radius: 10rpx 0 0 10rpx;
+}
+
+.watch {
+  position: relative;
+}
+
+.avatar-wrap,.avatar-image{
+  height: 70rpx;
+  width: 70rpx;
+  border-radius: 50%;
+}
+.avatar-wrap{
+  border: 2rpx #f6f6f6 solid;
+}
+.nickName{
+  /* height: 30rpx;
+  line-height: 30rpx; */
+  color: #666;
+  font-size: 30rpx;
+  font-weight: bold
+}
+.eye {
+  width: 70rpx;
+  height: 70rpx;
+  background-color: rgb(255, 190, 40);
+  background-position: center;
+  background-size: 50rpx 50rpx;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.star-list {
+  width: 60rpx;
+  margin-left: 5rpx;
+}
+
+.star-item {
+  width: 24rpx;
+  height: 24rpx;
+  background-size: cover;
+}
+
+.info-desc {
+  margin: 0 30rpx;
+  font-weight: bold;
+}
+
+.send-num {
+  height: 42rpx;
+}
+
+.info-num {
+  margin: 4rpx 0 0 10rpx;
+  color: rgb(255, 168, 0);
+}

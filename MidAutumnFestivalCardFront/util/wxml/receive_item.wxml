@@ -1,0 +1,33 @@
+<view wx:if='{{!receiveEmpty}}'>
+  <block wx:for="{{receiveThemes}}" wx:key="id">
+    <view class='list-wrap'>
+      <view class="list-item frc-s">
+        <view class="item-image-wrap">
+          <image src="/img/theme/cardmin{{item.themeid}}.png" class="item-image">
+          </image>
+        </view>
+        <view class="item-content">
+          <view class="friend-name frc">
+            <view class="bg-name name-bg"></view>
+            <text class='no-wrap'>{{item.friendName}}</text>
+          </view>
+          <view class="said frc">
+            <view class="bg-said said-bg"></view>
+            <text class='no-wrap'>{{item.content}}</text>
+          </view>
+        </view>
+        <view class='ptlwh z99' data-id='{{item.id}}' data-idx="{{index}}" bindtap='handleTheme' catchlongpress='del'></view>
+        <view class='form-who frc-s fs22'>
+          <text>{{show.handleTime(item.createTime,item.dateDiff)}}</text>
+          <text class='send-name-wrap'>来自 <text class='send-name'>{{show.na(item.nickName,"name")}}</text></text>
+          <image src='{{show.na(item.avatarUrl,"url")}}' class='min-avatar'></image>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view wx:else class='empty fcc'>
+  <view class='empty-bg {{show.r(emptyBgs)}}'></view>
+  <view class='empty-content fs28'>{{show.r(receiveEmptyTips)}}</view>
+  <!-- <view class='empty-link fs26' bindtap='toIndex'>去收集</view> -->
+</view>

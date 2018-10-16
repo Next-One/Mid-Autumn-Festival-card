@@ -1,0 +1,83 @@
+@import "/util/wxss/base64.wxss";
+@import "/util/wxss/bug_modal.wxss";
+
+.list-item {
+  line-height: 128rpx;
+  border-top: 1rpx #eee solid;
+  border-bottom: 1rpx #eee solid;
+  height: 128rpx;
+  padding: 0 60rpx 0 40rpx;
+  position: relative;
+}
+
+.icon-right {
+  position: absolute;
+  top: 50rpx;
+  width: 32rpx;
+  height: 32rpx;
+  right: 20rpx;
+  background-size: cover;
+  z-index: 2;
+  transform: rotate(0);
+  transition: transform 0.8s;
+}
+
+.icon-left {
+  position: absolute;
+  top: 48rpx;
+  left: 10rpx;
+  background-size: cover;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.hide-txt {
+  height: 0;
+  overflow: hidden;
+  line-height: 32rpx;
+  color: #ccc;
+  transition: height 0.5s;
+}
+
+.text-wrap {
+  padding: 10rpx 20rpx;
+  text-indent: 48rpx;
+}
+
+.active0-txt {
+  height: 116rpx;
+}
+
+.active2-txt {
+  height: 148rpx;
+}
+
+.active1-txt {
+  height: 84rpx;
+}
+
+.active4-txt {
+  height: 364rpx;
+}
+
+.active-icon {
+  transform: rotate(90deg);
+}
+
+.line-30 {
+  height: 30rpx;
+  background: rgb(245, 244, 249);
+}
+
+.avatar-wrap, .avatar-img {
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 8rpx;
+}
+
+.level-tip {
+  width: 32rpx;
+  height: 32rpx;
+  background-size: cover;
+  display: inline-block;
+}
