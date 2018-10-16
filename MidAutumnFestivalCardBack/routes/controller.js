@@ -8,8 +8,8 @@ const express = require('express'),
     log = require('../debugLog');
 
 const wxURL = 'https://api.weixin.qq.com/sns/jscode2session',
-    appID = '?appid=wx973a72e46badd707',
-    SECRET = '&secret=735ba1b5c50cea3338ecdcbfe04ebf05',
+    appID = '?appid=*',
+    SECRET = '&secret=*',
     jscode = '&js_code=',
     auth = '&grant_type=authorization_code',
     client = '&grant_type=client_credential',
@@ -18,7 +18,7 @@ const wxURL = 'https://api.weixin.qq.com/sns/jscode2session',
     access_url = 'https://api.weixin.qq.com/cgi-bin/token';
 
 
-/* user login */
+/* user code 获取小程序二维码 */
 router.get('/code', function (req, res) {
 
     const url = access_url + appID + SECRET + client;
