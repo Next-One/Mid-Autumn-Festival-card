@@ -1,8 +1,8 @@
 module.exports = {
     mysql: {
-        host: 'localhost',
+        host: 'wmx6.cn',
         user: 'root',
-        password: 'password',
+        password: 'rR0PupTNi0btJOHr',
         database:'wx',
         connectionLimit: 1000
     }

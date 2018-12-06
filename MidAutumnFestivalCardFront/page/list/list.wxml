@@ -1,70 +1,158 @@
-<wxs src="./../lib/show.wxs" module="show" />
+<wxs src="./../lib/show.wxs" module="show"/>
 <view class='content-wrap'>
-  <view class="user-info-wrap">
-    <image class='userinfo-bg' src='/img/userinfo_bg.png'  />
-    <view class="user-info frc-s">
-      <view class="user-avatar-wrap">
-        <image src="{{avatarUrl}}" class="user-avatar-img" />
-        <view class="icon-avatar user-level-bg"></view>
-      </view>
-      <view class="user-info-content">
-        <view class="user-name fs28">
-          <view class="ava-tip"></view>
-          {{nickName}}
+    <view class="fix-head">
+        <view class="user-info-wrap">
+            <image class='userinfo-bg' src='/img/userinfo_bg.png'/>
+            <view class="user-info frc-s">
+                <view class="user-avatar-wrap">
+                    <open-data type="userAvatarUrl"></open-data>
+                    <view class="icon-avatar user-level-bg"></view>
+                </view>
+                <view class="user-info-content">
+                    <view class="user-name bg-username-tip">
+                        <open-data type="userNickName"></open-data>
+                    </view>
+                    <view class="user-time bg-join-time">
+                        {{show.time(userInfo.registerTime)}}
+                    </view>
+                </view>
+                <view class='setting-userinfo bg-arr-right'>设置</view>
+                <view class="user-level frc-s">
+                    <block wx:for="{{show.level(send,receive)}}" wx:key="*this">
+                        <view class="level-tip level-bg">
+                        </view>
+                    </block>
+                </view>
+            </view>
+            <view class='ptlwh z99' bindtap='setInfo'></view>
         </view>
-        <view class="user-id">
-          <view class="id-tip fs28">ID</view>
-          {{show.oid(openid)}}
+        <view class='card-tab frc'>
+            <view class='bg-send send-bg {{currentTab == 0 ? "ctheme":""}}' data-tab='0' catchtap='switchTab'>发送贺卡
+            </view>
+            <view class='bg-receive receive-bg {{currentTab == 1 ? "ctheme":""}}' data-tab='1' catchtap='switchTab'>
+                接收贺卡
+            </view>
+            <view class="active-line {{currentTab===0?'':'active'}}"></view>
         </view>
-      </view>
-      <view class='setting-userinfo fs28' >设置</view>
-      <view class="user-level frc-s">
-        <block wx:for="{{show.level(send,receive)}}" wx:key="*this">
-          <view class="level-tip level-bg">
-          </view>
-        </block>
-      </view>
     </view>
-    <view class='ptlwh z99' bindtap='setInfo'></view>
-  </view>
-  <view class="swiper-tab fs26">
-    <view class="swiper-tab-item frc">
-      <view class='tab-bg bg-send send-bg'></view>
-      <view>发送的贺卡</view>
-      <view class='ptlwh z99' bindtap="clickTab" data-current="0"></view>
+    <!--<view class="swiper-tab fs26">
+        <view class="swiper-tab-item frc">
+            <view class='tab-bg bg-send send-bg'></view>
+            <view>发送的贺卡</view>
+            <view class='ptlwh z99' bindtap="clickTab" data-current="0"></view>
+        </view>
+        <view class="swiper-tab-item frc">
+            <view class='tab-bg bg-receive receive-bg'></view>
+            <view>收到的贺卡</view>
+            <view class='ptlwh z99' bindtap="clickTab" data-current="1"></view>
+        </view>
+        <view class='line-h'></view>
+        <view class="active-line {{currentTab===0?'':'active'}}"></view>
     </view>
-    <view class="swiper-tab-item frc">
-      <view class='tab-bg bg-receive receive-bg'></view>
-      <view>收到的贺卡</view>
-      <view class='ptlwh z99' bindtap="clickTab" data-current="1"></view>
+    <view class="{{currentTab===0?'':'none'}}">
+        <include src="/util/wxml/theme_item.wxml"/>
     </view>
-    <view class='line-h'></view>
-    <view class="active-line {{currentTab==0?'':'active'}}"></view>
-  </view>
-  <view class="{{currentTab==0?'':'none'}}">
-  <include src="/util/wxml/theme_item.wxml" /></view>
-  <view class="{{currentTab==1?'':'none'}}">
-  <include src="/util/wxml/receive_item.wxml" /></view>
+    <view class="{{currentTab===1?'':'none'}}">
+        <include src="/util/wxml/receive_item.wxml"/>
+    </view>-->
+
+
+    <view class='card-content wh100'>
+
+        <swiper class="tab-box" current="{{currentTab}}" duration="300" bindchange="switchTab">
+            <swiper-item class="tab-content">
+                <view wx:if='{{sendThemes.length}}'>
+                    <view class="list-wrap">
+                        <view class="list-item frc-s mb-20" wx:for="{{sendThemes}}" wx:key="id" data-id='{{item.id}}'
+                              data-idx="{{index}}" bindtap='handleTheme'
+                              catchlongpress='del'>
+                            <view class="item-image-wrap">
+                                <image src="/img/theme/cardmin{{item.themeid}}.png" class="item-image">
+                                </image>
+                            </view>
+                            <view class="item-content">
+                                <view class="friend-name frc">
+                                    <view class="bg-name name-bg"></view>
+                                    <text class='no-wrap'>{{item.friendName}}</text>
+                                </view>
+                                <view class="content frc">
+                                    <view class="bg-content content-bg"></view>
+                                    <text class='no-wrap'>{{item.content}}</text>
+                                </view>
+                            </view>
+                            <view class='edit-tip'></view>
+                            <!--<view class='ptlwh z99' data-id='{{item.id}}' data-idx="{{index}}" bindtap='handleTheme'-->
+                            <!--catchlongpress='del'></view>-->
+                            <view class='form-who fs24'>
+                                {{show.handleTime(item.createTime,item.dateDiff)}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+                <view wx:else class='empty fcc'>
+                    <view class='empty-bg {{show.r(emptyBgs)}}'></view>
+                    <view class='empty-content'>{{show.r(sendEmptyTips)}}</view>
+                    <view class='empty-link fs26' bindtap='toIndex'>去收集</view>
+                </view>
+            </swiper-item>
+            <swiper-item class="tab-content">
+                <view wx:if='{{receiveThemes.length}}'>
+                    <block wx:for="{{receiveThemes}}" wx:key="id">
+                        <view class='list-wrap'>
+                            <view class="list-item frc-s mb-20" data-id='{{item.id}}' data-idx="{{index}}" bindtap='handleTheme' catchlongpress='del'>
+                                <view class="item-image-wrap">
+                                    <image src="/img/theme/cardmin{{item.themeid}}.png" class="item-image">
+                                    </image>
+                                </view>
+                                <view class="item-content">
+                                    <view class="friend-name frc">
+                                        <view class="bg-name name-bg"></view>
+                                        <text class='no-wrap'>{{item.friendName}}</text>
+                                    </view>
+                                    <view class="content frc">
+                                        <view class="bg-content content-bg"></view>
+                                        <text class='no-wrap'>{{item.content}}</text>
+                                    </view>
+                                </view>
+                                <!--<view class='ptlwh z99' data-id='{{item.id}}' data-idx="{{index}}" bindtap='handleTheme' catchlongpress='del'></view>-->
+                                <view class='form-who frc-s fs24'>
+                                    <text>{{show.handleTime(item.createTime,item.dateDiff)}}</text>
+                                    <text class='send-name-wrap'>来自 <text class='send-name'>{{show.na(item.nickName,"name")}}</text></text>
+                                    <image src='{{show.na(item.avatarUrl,"url")}}' class='min-avatar'></image>
+                                </view>
+                            </view>
+                        </view>
+                    </block>
+                </view>
+                <view wx:else class='empty fcc'>
+                    <view class='empty-bg {{show.r(emptyBgs)}}'></view>
+                    <view class='empty-content fs28'>{{show.r(receiveEmptyTips)}}</view>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+
 </view>
 
-<modal title="您确定要删除吗？" cancel-text="取消" confirm-text="确认" bindcancel="cancel" bindconfirm="confirmDelete" hidden="{{hidden}}">
-  <view class='list-wrap'>
-    <view class="list-item frc-s">
-      <view class="item-image-wrap">
-        <image src="/img/theme/cardmin{{theme.themeid}}.png" class="item-image">
-        </image>
-      </view>
-      <view class="item-content">
-        <view class="item-friend-name-2">
-          <view class="icon name-bg fs24"></view>
-          {{theme.friendName}}
-          <text class="item-time fs20">{{show.handleTime(theme.createTime,theme.dateDiff)}}</text>
+<modal title="您确定要删除吗？" cancel-text="取消" confirm-text="确认" bindcancel="cancel" bindconfirm="confirmDelete"
+       hidden="{{hidden}}">
+    <view class='list-wrap'>
+        <view class="list-item frc-s">
+            <view class="item-image-wrap">
+                <image src="/img/theme/cardmin{{theme.themeid}}.png" class="item-image">
+                </image>
+            </view>
+            <view class="item-content">
+                <view class="item-friend-name-2">
+                    <view class="icon name-bg fs24"></view>
+                    {{theme.friendName}}
+                    <text class="item-time fs20">{{show.handleTime(theme.createTime,theme.dateDiff)}}</text>
+                </view>
+                <view class="item-content-2 c999 fs22">
+                    <view class="icon content-bg"></view>
+                    {{theme.content}}
+                </view>
+            </view>
         </view>
-        <view class="item-said-2 c999 fs22">
-          <view class="icon said-bg"></view>
-          {{theme.content}}
-        </view>
-      </view>
     </view>
-  </view>
 </modal>

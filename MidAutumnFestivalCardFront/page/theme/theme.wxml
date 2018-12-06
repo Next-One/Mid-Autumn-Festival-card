@@ -3,24 +3,24 @@
 <include src="/util/wxml/friend_modal.wxml" />
 <canvas canvas-id='myCanvas' class='myCanvas'></canvas>
 <view class='fcc theme-content'>
-  <image class='image-wrap ptlwh z-10' mode='aspectFill' src='https://app.h5i.cc/img/theme/card{{currentThemeID}}.jpg'></image>
+  <image class='image-wrap ptlwh z-10' mode='aspectFill' src='http://47.107.89.101/img/theme/card{{currentThemeID}}.jpg'></image>
   <view class='content stff'>
-    <block wx:if="{{currentThemeID == 1}}">
+    <block wx:if="{{currentThemeID === 1}}">
       <include src="/util/wxml/theme_1.wxml" />
     </block>
-    <block wx:elif="{{currentThemeID == 2}}">
+    <block wx:elif="{{currentThemeID === 2}}">
       <include src="/util/wxml/theme_2.wxml" />
     </block>
-    <block wx:elif="{{currentThemeID == 3}}">
+    <block wx:elif="{{currentThemeID === 3}}">
       <include src="/util/wxml/theme_3.wxml" />
     </block>
-    <block wx:elif="{{currentThemeID == 4}}">
+    <block wx:elif="{{currentThemeID === 4}}">
       <include src="/util/wxml/theme_4.wxml" />
     </block>
-    <block wx:elif="{{currentThemeID == 5}}">
+    <block wx:elif="{{currentThemeID === 5}}">
       <include src="/util/wxml/theme_5.wxml" />
     </block>
-    <block wx:else="{{currentThemeID == 6}}">
+    <block wx:else>
       <include src="/util/wxml/theme_6.wxml" />
     </block>
 

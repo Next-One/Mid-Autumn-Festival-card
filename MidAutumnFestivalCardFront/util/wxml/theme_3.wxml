@@ -1,50 +1,50 @@
 <view class="card-area {{refresh}}">
   <view class="ani-list-bg">
     <view class="ani-list-item" data-index="1" style="width: 376px; height: 520px; left: -27px; top: -19px; animation: fadeIn 0.8s ease 0s 1 normal both running;">
-      <image src="https://app.h5i.cc/img/theme3/FjTxXcdxGbDb77YEmP2xojI_ENlk.png" style="width: 376px; height: 520px;"></image>
+      <image src="http://47.107.89.101/img/theme3/FjTxXcdxGbDb77YEmP2xojI_ENlk.png" style="width: 376px; height: 520px;"></image>
     </view>
     <view class="ani-list-item" data-index="2" style="width: 374px; height: 502px; left: -27px; top: -19px;animation: fadeIn 1s ease 0s 1 normal both running;">
-      <image src="https://app.h5i.cc/img/theme3/o_1bh5691224rm1btu1j2li7d1drgu.gif" style="width: 374px; height: 589px;">
+      <image src="http://47.107.89.101/img/theme3/o_1bh5691224rm1btu1j2li7d1drgu.gif" style="width: 374px; height: 589px;">
       </image>
     </view>
     <view class="ani-list-item" data-index="3" style="width: 282px;top: 19px; left: 19px; animation: fadeInRight 0.8s ease 0.5s 1 normal both running;">
-      <image src="https://app.h5i.cc/img/theme3/FpqxxdkD_K3wKuN4yT0YBGK1ewV5.png" style="width: 282px; height: 442px;"></image>
+      <image src="http://47.107.89.101/img/theme3/FpqxxdkD_K3wKuN4yT0YBGK1ewV5.png" style="width: 282px; height: 442px;"></image>
     </view>
     <view class="ani-list-item" data-index="4" style="width: 280px; left: -63px; top: 444px;animation: fadeInUp 1s ease 0s 1 normal both running;">
-      <image src="https://app.h5i.cc/img/theme3/FlgnDPazfpGB-sSd8ixk4WsxCTpA.png" style="width: 280px; height: 63px;">
+      <image src="http://47.107.89.101/img/theme3/FlgnDPazfpGB-sSd8ixk4WsxCTpA.png" style="width: 280px; height: 63px;">
       </image>
     </view>
     <view class="ani-list-item" data-index="5" style="width: 280px;top: 444px; left: 149px; animation: fadeInUp 1s ease 0s 1 normal both running;">
-      <image src="https://app.h5i.cc/img/theme3/FlgnDPazfpGB-sSd8ixk4WsxCTpA.png" style="width: 280px; height: 63px;">
+      <image src="http://47.107.89.101/img/theme3/FlgnDPazfpGB-sSd8ixk4WsxCTpA.png" style="width: 280px; height: 63px;">
       </image>
     </view>
     <view class="ani-list-item" data-index="6" style="width: 69px;top: 235px; left: -32px; animation: fadeInLeft 1s ease 2s 1 normal both running;">
-      <image src="https://app.h5i.cc/img/theme3/FpyXRfPMdHX3uPZQVTAKRNAx13Vd.png" style="width: 69px; height: 30px;">
+      <image src="http://47.107.89.101/img/theme3/FpyXRfPMdHX3uPZQVTAKRNAx13Vd.png" style="width: 69px; height: 30px;">
       </image>
     </view>
     <view class="ani-list-item" data-index="7" style="width: 97px;left: 186px; top: 22px; animation: fadeInRight 1s ease 2s 1 normal both running;">
 
-      <image src="https://app.h5i.cc/img/theme3/Fi35cwdCr2jk4a1bFUh-bHPyGzd-.png" style="width: 97px; height: 189px;">
+      <image src="http://47.107.89.101/img/theme3/Fi35cwdCr2jk4a1bFUh-bHPyGzd-.png" style="width: 97px; height: 189px;">
       </image>
     </view>
     <view class="ani-list-item" data-index="8" style="top: 235px; left: -32px; animation: fadeInLeft 1s ease 2s 1 normal both running;">
 
-      <image src="https://app.h5i.cc/img/theme3/FjynS9ZAAQ3yZFsM7HUUCWNM9WIV.png" style="width: 134px; height: 69px;">
+      <image src="http://47.107.89.101/img/theme3/FjynS9ZAAQ3yZFsM7HUUCWNM9WIV.png" style="width: 134px; height: 69px;">
       </image>
     </view>
     <view class="ani-list-item" data-index="9" style="width: 146px; top: 221px; left: 223px; animation: fadeInRight 1s ease 2s 1 normal both running;">
 
-      <image src="https://app.h5i.cc/img/theme3/Fq0gfmMYtDfdUfBVTSuzDYFxn-BA.png" style="width: 146px; height: 75px;">
+      <image src="http://47.107.89.101/img/theme3/Fq0gfmMYtDfdUfBVTSuzDYFxn-BA.png" style="width: 146px; height: 75px;">
       </image>
     </view>
     <view class="ani-list-item" data-index="10" style="width: 283px; top: 19px; left: 19px; animation: fadeIn 1s ease 1s 1 normal both running;">
 
-      <image src="https://app.h5i.cc/img/theme3/Fh8wLcAfH4M_3ajlZQbE4xl_E69s.png" style="width: 283px; height: 16px;">
+      <image src="http://47.107.89.101/img/theme3/Fh8wLcAfH4M_3ajlZQbE4xl_E69s.png" style="width: 283px; height: 16px;">
       </image>
     </view>
     <view class="ani-list-item" data-index="11" style="width: 91px; top: 68px; left: 191px; animation: zoomIn 1s ease 1.6s 1 normal both running;">
 
-      <image src="https://app.h5i.cc/img/theme3/o_1bq9v91cp1s0kr9uo08120fh7b9.gif" style="width: 91px; height: 91px; ">
+      <image src="http://47.107.89.101/img/theme3/o_1bq9v91cp1s0kr9uo08120fh7b9.gif" style="width: 91px; height: 91px; ">
       </image>
     </view>
     <view class="ani-list-item" data-index="12" style=" width: 310px; top: 411px; left: 10px; animation: zoomIn 1s ease 2s 1 normal both running;">
@@ -56,13 +56,13 @@
       <view class="day-tip">佳节</view>
     </view>
     <view class="ani-list-item" data-index="14" style="width: 127px; top: 263px; left: 94px; animation: zoomIn 1s ease 2.5s 1 normal both running;">
-      <image src="https://app.h5i.cc/img/theme3/Fkgt-oP5SEiEO0jO_aCXZOS6tITo.png" style="width: 127px; height: 148px;">
+      <image src="http://47.107.89.101/img/theme3/Fkgt-oP5SEiEO0jO_aCXZOS6tITo.png" style="width: 127px; height: 148px;">
       </image>
     </view>
     <view class='zfy3-wrap'>
       <view class="shu-text">
         <view class="ch-text">{{friendName}}</view>
-        <view class="content-text">{{said}}</view>
+        <view class="content-text">{{content}}</view>
       </view>
     </view>
   </view>

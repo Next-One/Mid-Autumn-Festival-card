@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp();
-const common = require('../../util/js/common.js');
+const userRest = require('../../util/js/userRest.js');
 
 Page({
   data: {
@@ -26,12 +26,12 @@ Page({
     confirmText: '去编辑',
     showTheme: "",
     bgArr: [1, 2, 3],
-    send: 0,
-    receive: 0,
     emptyBgs: ["bg-empty-1", "bg-empty-2"],
     bubbleNums: 12,
-    avatarUrl: app.globalData.avatarUrl,
-    nickName: app.globalData.nickName
+    userInfo: {
+      send: 0,
+      receive: 0
+    }
   },
   onShareAppMessage: function(obj) {
     return {
@@ -61,7 +61,7 @@ Page({
 
   randomBgId: function(e) {
     if (Math.random() > 0.25) {
-      var randomBgID = Math.ceil(Math.random() * this.data.len);
+      let randomBgID = Math.ceil(Math.random() * this.data.len);
       this.setData({
         currentThemeID: randomBgID,
         card: true,
@@ -79,12 +79,11 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    common.wxLogin(app.globalData,this);
-  },
-  setInfo: function (e) {
-    wx.navigateTo({
-      url: "../set/set?avatarUrl=" + this.data.avatarUrl + "&nickName=" + this.data.nickName
+    userRest.getReq(app.globalData.openid, (userInfo) => {
+      this.setData({
+        userInfo: userInfo
+      });
+      app.globalData.userInfo = userInfo;
     });
   }
-
-})
+});

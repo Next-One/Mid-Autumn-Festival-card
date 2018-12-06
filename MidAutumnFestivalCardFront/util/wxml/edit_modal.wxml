@@ -8,10 +8,10 @@
         </view>
         <view class="item-wrap frj">
           <label>想说的话</label>
-          <textarea class='textarea input' name="said"  placeholder-style='color:#cccccc;font-size:28rpx;' auto-height maxlength='80' placeholder="{{said}}" value=""/>
+          <textarea class='textarea input' name="content"  placeholder-style='color:#cccccc;font-size:28rpx;' auto-height maxlength='80' placeholder="{{content}}" value=""/>
         </view>
       </view>
-      <button type='primary' bindtap='refreshView' formType="submit" size="default" class="submit-btn">预 览 效 果</button>
+      <button type='primary' bindtap='refreshView' form-type="submit" size="default" class="submit-btn">预 览 效 果</button>
     </form>
   </view>
 </modal>

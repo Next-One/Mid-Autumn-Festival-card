@@ -13,7 +13,4 @@
   <view class='btn-wrap'>
     <button size='default' type="primary"  plain='true' open-type='share'>分 享</button>
   </view>
-  <view class='btn-wrap'>
-    <button size='default' plain='true' open-type='writePhotosAlbum' class="txt-border" bindtap='friendQuan'>保存</button>
-  </view>
 </view>

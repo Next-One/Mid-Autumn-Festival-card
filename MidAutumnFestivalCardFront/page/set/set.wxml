@@ -4,38 +4,36 @@
     <view class='set-btn'>设置</view>
   </view>
   <view class='line-30'></view>
-  <view class='list-item frj'>
+  <view class='list-item frj' catchtap='open' data-idx='0'>
     <view>昵称</view>
-    <view class='fs24 c999'>{{nickName}}
+    <view class='fs24 c999'><open-data type="userNickName"></open-data>
     </view>
-    <view class='icon-right bg-right {{active[0] == 0 ? "":"active-icon"}}'></view>
-    <view class='ptlwh z99' catchtap='open' data-idx='0'></view>
+    <view class='icon-right bg-right {{active[0] === 0 ? "":"active-icon"}}'></view>
+    <!--<view class='ptlwh z99' catchtap='open' data-idx='0'></view>-->
   </view>
-  <view class='hide-txt {{active[0] == 0 ? "":"active0-txt"}}'>
+  <view class='hide-txt {{active[0] === 0 ? "":"active0-txt"}}'>
     <view class='text-wrap'>
       昵称：将仅用于给好友展示该贺卡是谁发送的，如果您不想从微信导入；系统会默认，以游客身份发送给好友。
     </view>
   </view>
-  <view class='list-item frj'>
+  <view class='list-item frj'  catchtap='open' data-idx='1'>
     <view>头像</view>
     <view class="avatar-wrap">
-      <image src="{{avatarUrl}}" class="avatar-img"></image>
+      <open-data type="userAvatarUrl"></open-data>
     </view>
-    <view class='icon-right bg-right {{active[1] == 0 ? "":"active-icon"}}'></view>
-    <view class='ptlwh z99' catchtap='open' data-idx='1'></view>
+    <view class='icon-right bg-right {{active[1] === 0 ? "":"active-icon"}}'></view>
   </view>
-  <view class='hide-txt {{active[1] == 0 ? "":"active0-txt"}}'>
+  <view class='hide-txt {{active[1] === 0 ? "":"active0-txt"}}'>
     <view class='text-wrap'>
       头像：与昵称效果相同。
     </view>
   </view>
   <view class='line-30'></view>
-  <view class='list-item frj'>
+  <view class='list-item frj'  catchtap='open' data-idx='2'>
     <view>使用指南</view>
-    <view class='icon-right bg-right {{active[2] == 0 ? "":"active-icon"}}'></view>
-    <view class='ptlwh z99' catchtap='open' data-idx='2'></view>
+    <view class='icon-right bg-right {{active[2] === 0 ? "":"active-icon"}}'></view>
   </view>
-  <view class='hide-txt {{active[2] == 0 ? "":"active4-txt"}}'>
+  <view class='hide-txt {{active[2] === 0 ? "":"active4-txt"}}'>
     <view class='text-wrap'>
       贺卡抽取：在首页点击泡泡，有一定几率得到贺卡。抽取贺卡后，可以进行贺卡编辑，然后分享给好友，传递祝福！您发送的祝福越多，将得到
       <text class="level-tip level-bg"></text>奖励！在我的界面看到默认数1，最大数8。
@@ -45,27 +43,19 @@
     </view>
   </view>
   <view class='list-item frj'>
-    <view>反馈</view>
-    <view class='fs24 c999'>bug提交</view>
-    <view class='icon-right bg-right'></view>
-    <view class='ptlwh z99' catchtap='showBug'></view>
-  </view>
-  <view class='line-30'></view>
-  <view class='list-item frj'>
     <view>重新登录</view>
     <view class='icon-right bg-right'></view>
     <view class='ptlwh z99' catchtap='reLogin'></view>
   </view>
   <view class='line-30'></view>
-  <view class='list-item frj'>
+  <view class='list-item frj' catchtap='open' data-idx='3'>
     <view>从微信导入
     </view>
     <view class='fs24 c999'>仅昵称、头像等
     </view>
-    <view class='icon-right bg-right {{active[3] == 0 ? "":"active-icon"}}'></view>
-    <view class='ptlwh z99' catchtap='open' data-idx='3'></view>
+    <view class='icon-right bg-right {{active[3] === 0 ? "":"active-icon"}}'></view>
   </view>
-  <view class='hide-txt {{active[3] == 0 ? "":"active0-txt"}}'>
+  <view class='hide-txt {{active[3] === 0 ? "":"active0-txt"}}'>
     <view class='text-wrap'>
       从微信导入的详细信息包括：昵称、头像、省份、城市、性别。
     </view>
@@ -73,5 +63,3 @@
   <view class='line-30'></view>
   <button type="primary" plain="true" open-type='getUserInfo' bindgetuserinfo='getUserInfo'> 导入 </button>
 </view>
-
-<include src="/util/wxml/bug_modal.wxml" />

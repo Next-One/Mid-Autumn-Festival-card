@@ -9,12 +9,12 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "debug": "^4.0.1",
-    "express": "^4.16.3",
-    "mysql": "^2.16.0",
-    "jade": "^1.11.0",
-    "request": "^2.88.0",
+    "debug": "",
+    "express": "",
+    "mysql": "",
+    "jade": "",
+    "request": "",
     "fs": "",
-    "simple-node-logger": "^0.93.40"
+    "simple-node-logger": ""
   }
 }

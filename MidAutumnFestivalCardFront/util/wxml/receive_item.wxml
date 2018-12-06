@@ -1,4 +1,4 @@
-<view wx:if='{{!receiveEmpty}}'>
+<view wx:if='{{receiveThemes.length}}'>
   <block wx:for="{{receiveThemes}}" wx:key="id">
     <view class='list-wrap'>
       <view class="list-item frc-s">
@@ -11,13 +11,13 @@
             <view class="bg-name name-bg"></view>
             <text class='no-wrap'>{{item.friendName}}</text>
           </view>
-          <view class="said frc">
-            <view class="bg-said said-bg"></view>
+          <view class="content frc">
+            <view class="bg-content content-bg"></view>
             <text class='no-wrap'>{{item.content}}</text>
           </view>
         </view>
         <view class='ptlwh z99' data-id='{{item.id}}' data-idx="{{index}}" bindtap='handleTheme' catchlongpress='del'></view>
-        <view class='form-who frc-s fs22'>
+        <view class='form-who frc-s fs24'>
           <text>{{show.handleTime(item.createTime,item.dateDiff)}}</text>
           <text class='send-name-wrap'>来自 <text class='send-name'>{{show.na(item.nickName,"name")}}</text></text>
           <image src='{{show.na(item.avatarUrl,"url")}}' class='min-avatar'></image>

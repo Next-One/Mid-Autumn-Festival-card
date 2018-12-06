@@ -1,25 +1,37 @@
-.hidden {
-  overflow: hidden;
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.tr {
+  text-align: right;
+}
+
+.placehold-h {
+  height: 100rpx;
+  width: 100%;
 }
 
 .block {
   display: block;
 }
 
-.inline {
-  display: inline;
+.ib {
+  display: inline-block;
 }
 
 .none {
   display: none;
 }
 
-.z99 {
-  z-index: 99;
-}
-
-.z-10{
-  z-index: -10
+.tc {
+  text-align: center;
 }
 
 .h100 {
@@ -41,19 +53,27 @@
   left: 0;
 }
 
-.fs22, .tip {
-  font-size: 26rpx;
+.pr{
+  position: relative;
 }
 
-.fs24, page {
-  font-size: 28rpx;
+.fs24 {
+  font-size: 24rpx;
 }
 
 .fs26 {
+  font-size: 26rpx;
+}
+
+.fs28, page {
+  font-size: 28rpx;
+}
+
+.fs30 {
   font-size: 30rpx;
 }
 
-.fs28 {
+.fs32 {
   font-size: 32rpx;
 }
 
@@ -61,24 +81,44 @@
   font-size: 36rpx;
 }
 
-.fs60{
-  font-size: 60rpx;
+.fs40 {
+  font-size: 40rpx;
 }
 
-.fs20 {
-  font-size: 24rpx;
+.c000 {
+  color: #000;
 }
 
-.fs18 {
-  font-size: 22rpx;
+.cccc {
+  color: #ccc;
 }
 
-.c999, .tip {
+.bgcw {
+  background-color: #fff;
+}
+
+.cmoney {
+  color: #ff5046;
+}
+
+.c666, page {
+  color: #666;
+}
+
+.ctheme {
+  color: #1fa0fc;
+}
+
+.cb2b {
+  color: #b2b2b2;
+}
+
+.c333 {
+  color: #333;
+}
+
+.c999 {
   color: #999;
-}
-
-.c05 {
-  color: rgba(0, 0, 0, 0.5);
 }
 
 .ceee {
@@ -89,23 +129,183 @@
   color: #fff;
 }
 
-bg32c {
+.image-wrap-view {
+  background-color: #eee;
+}
+
+.bg32c {
   height: 32rpx;
   width: 32rpx;
   background-size: cover;
   background-position: center;
 }
 
-.line-12, .line-24 {
-  background: #ebebeb;
+.line-12, .line-24, .line-18 {
+  background: #f4f8fb;
 }
 
-.line-24, .line-24-w {
+.line-24 {
   height: 24rpx;
+}
+
+.line-18 {
+  height: 18rpx;
 }
 
 .line-12 {
   height: 12rpx;
+}
+
+.lh-36 {
+  height: 36rpx;
+  line-height: 36rpx;
+}
+
+.lh-48 {
+  height: 48rpx;
+  line-height: 48rpx;
+}
+
+/* 子元素水平垂直居中,纵向排列 */
+
+.fcc, .fccc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fccc {
+  justify-content: center;
+}
+
+/* 子元素水平垂直居中,横向排列 */
+
+.frc, .frt, .frfs, .frcsa, .frcsb {
+  display: flex;
+  flex-direction: row;
+}
+
+.frt {
+  align-items: top;
+}
+
+.frc, .frcsa, .frcsb {
+  align-items: center;
+}
+
+.frfs {
+  align-items: flex-start;
+}
+
+.frcsa {
+  justify-content: space-around;
+}
+
+.frcsb {
+  justify-content: space-between;
+}
+
+.fcc-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.z1 {
+  z-index: -1;
+}
+
+.z2 {
+  z-index: -2;
+}
+
+.z3 {
+  z-index: -3;
+}
+
+.z4 {
+  z-index: -4;
+}
+
+.z5 {
+  z-index: -5;
+}
+
+/* 渐变色背景代替纯色背景 */
+
+.line-bg-1 {
+  background: linear-gradient(135deg, #e687ee, #a34ae0);
+}
+
+.line-bg-2 {
+  background: linear-gradient(135deg, #fd98ba, #f95385);
+}
+
+.line-bg-3 {
+  background: linear-gradient(135deg, #75e4d7, #32a8d7);
+}
+
+.line-bg-4 {
+  background: linear-gradient(135deg, #ffa05e, #ff4d32);
+}
+
+.line-bg-5 {
+  background: linear-gradient(135deg, #f48173, #f42221);
+}
+
+.line-bg-6 {
+  background: linear-gradient(135deg, #9fe431, #52d11c);
+}
+
+.line-bg-7 {
+  background: linear-gradient(135deg, #cde7b0, #b8f422);
+}
+
+/* margin util */
+
+.mr-20 {
+  margin-right: 20rpx;
+}
+
+.ml-20 {
+  margin-left: 20rpx;
+}
+
+.mt-20 {
+  margin-top: 20rpx;
+}
+
+.mb-20 {
+  margin-bottom: 20rpx;
+}
+
+.mt-40 {
+  margin-top: 40rpx;
+}
+
+.hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.p4-20 {
+  padding: 20rpx;
+}
+
+.p4-10 {
+  padding: 10rpx;
+}
+
+
+
+.right-arr-24 {
+  width: 24rpx;
+  height: 24rpx;
+  background-size: cover;
+}
+
+.slider-right {
+  transform: translateX(0)!important ;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* 子元素水平垂直居中,纵向排列 */
@@ -147,32 +347,3 @@ bg32c {
   font-family: 'STXingkai', 'Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif;
 }
 
-/* 渐变色背景代替纯色背景 */
-
-.line-bg-1 {
-  background: linear-gradient(135deg, #e687ee, #a34ae0);
-}
-
-.line-bg-2 {
-  background: linear-gradient(135deg, #fd98ba, #f95385);
-}
-
-.line-bg-3 {
-  background: linear-gradient(135deg, #75e4d7, #32a8d7);
-}
-
-.line-bg-4 {
-  background: linear-gradient(135deg, #ffa05e, #ff4d32);
-}
-
-.line-bg-5 {
-  background: linear-gradient(135deg, #f48173, #f42221);
-}
-
-.line-bg-6 {
-  background: linear-gradient(135deg, #9fe431, #52d11c);
-}
-
-.line-bg-7 {
-  background: linear-gradient(135deg, #cde7b0, #b8f422);
-}

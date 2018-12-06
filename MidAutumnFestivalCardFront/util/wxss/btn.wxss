@@ -12,7 +12,7 @@
   width: 150px;
 }
 .send-group .btn-wrap{
-  width: 100px;
+  width: 150px;
 }
 .btn-wrap botton{
   width: 100%;

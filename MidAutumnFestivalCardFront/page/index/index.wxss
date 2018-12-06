@@ -95,26 +95,11 @@ page, .content {
 .avatar-wrap,.avatar-image{
   height: 70rpx;
   width: 70rpx;
+  overflow: hidden;
   border-radius: 50%;
 }
 .avatar-wrap{
-  border: 2rpx #f6f6f6 solid;
-}
-.nickName{
-  /* height: 30rpx;
-  line-height: 30rpx; */
-  color: #666;
-  font-size: 30rpx;
-  font-weight: bold
-}
-.eye {
-  width: 70rpx;
-  height: 70rpx;
-  background-color: rgb(255, 190, 40);
-  background-position: center;
-  background-size: 50rpx 50rpx;
-  background-repeat: no-repeat;
-  border-radius: 50%;
+  border: 4rpx #f6f6f6 solid;
 }
 
 .star-list {

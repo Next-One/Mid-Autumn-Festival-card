@@ -41,6 +41,8 @@
   background-size: cover;
 }
 
+
+
 .receive-bg {
   background-size: 32rpx 32rpx;
   background-repeat: no-repeat;
@@ -62,16 +64,12 @@
   left: 51%;
 }
 
-.content-wrap, page {
-  width: 100%;
-  height: 100%;
-}
 
 .list {
   padding: 16rpx;
 }
 
-.item-friend-name-2, .item-said-2 {
+.item-friend-name-2, .item-content-2 {
   max-width: 300rpx;
   overflow: hidden;
   padding-left: 48rpx;
@@ -80,66 +78,6 @@
   line-height: 60rpx;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.user-info-wrap {
-  width: 100%;
-  height: 184rpx;
-  overflow: hidden;
-  position: relative;
-  padding: 20rpx 0;
-}
-
-.userinfo-bg {
-  position: absolute;
-  z-index: -99;
-  top: 0;
-  left: 0;
-  width: 750rpx;
-  height: 224rpx;
-}
-
-.user-info {
-  padding: 20rpx;
-  color: #fff;
-  position: relative;
-}
-
-.user-avatar-wrap, .user-avatar-img {
-  width: 128rpx;
-  height: 128rpx;
-  border-radius: 8rpx;
-}
-
-.user-avatar-wrap {
-  border: 4rpx #fff solid;
-  position: relative;
-}
-
-.user-name, .user-id {
-  position: relative;
-  padding: 0 0 0 60rpx;
-}
-
-.user-name {
-  font-size: 28rpx;
-  line-height: 72rpx;
-  height: 72rpx;
-}
-
-.user-id {
-  line-height: 56rpx;
-  height: 56rpx;
-  font-size: 24rpx;
-}
-
-.icon-avatar {
-  position: absolute;
-  bottom: -16rpx;
-  right: -16rpx;
-  width: 36rpx;
-  height: 32rpx;
-  background-size: cover;
 }
 
 .user-info-content {
@@ -159,31 +97,128 @@
   background-size: cover;
 }
 
-.ava-tip {
-  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTM3MjcyMjM4MDc3IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjM5NzgiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTUwNi4xOTQzODQgNTYzLjk3NDA4MmEyODEuOTg3MDQxIDI4MS45ODcwNDEgMCAxIDEgMjgxLjk4NzA0MS0yODEuOTg3MDQxIDI4Mi41Mzk5NTcgMjgyLjUzOTk1NyAwIDAgMS0yODEuOTg3MDQxIDI4MS45ODcwNDF6IG0wLTUwOC42ODI1MDVhMjI2LjY5NTQ2NCAyMjYuNjk1NDY0IDAgMSAwIDIyNi42OTU0NjUgMjI2LjY5NTQ2NEEyMjcuMjQ4MzggMjI3LjI0ODM4IDAgMCAwIDUwNi4xOTQzODQgNTUuMjkxNTc3eiIgZmlsbD0iI2ZmZmZmZiIgcC1pZD0iMzk3OSI+PC9wYXRoPjxwYXRoIGQ9Ik05OTcuMTgzNTg1IDk5NS4yNDgzOGgtNTUuMjkxNTc2QTQyOS42MTU1NTEgNDI5LjYxNTU1MSAwIDEgMCA4Mi4xMDc5OTEgOTk1LjI0ODM4SDI2LjgxNjQxNWE0ODQuOTA3MTI3IDQ4NC45MDcxMjcgMCAxIDEgOTcwLjM2NzE3IDB6IiBmaWxsPSIjZmZmZmZmIiBwLWlkPSIzOTgwIj48L3BhdGg+PHBhdGggZD0iTTk2OS41Mzc3OTcgOTk2LjM1NDIxMm0tMjcuNjQ1Nzg4IDBhMjcuNjQ1Nzg4IDI3LjY0NTc4OCAwIDEgMCA1NS4yOTE1NzYgMCAyNy42NDU3ODggMjcuNjQ1Nzg4IDAgMSAwLTU1LjI5MTU3NiAwWiIgZmlsbD0iI2ZmZmZmZiIgcC1pZD0iMzk4MSI+PC9wYXRoPjxwYXRoIGQ9Ik01NC40NjIyMDMgOTk2LjM1NDIxMm0tMjcuNjQ1Nzg4IDBhMjcuNjQ1Nzg4IDI3LjY0NTc4OCAwIDEgMCA1NS4yOTE1NzYgMCAyNy42NDU3ODggMjcuNjQ1Nzg4IDAgMSAwLTU1LjI5MTU3NiAwWiIgZmlsbD0iI2ZmZmZmZiIgcC1pZD0iMzk4MiI+PC9wYXRoPjwvc3ZnPg==");
-  background-size: cover;
-  top: 16rpx;
-  left: 8rpx;
-}
-
-.id-tip {
-  top: -4rpx;
-  left: 12rpx;
-}
-
-.id-tip, .ava-tip {
-  height: 40rpx;
-  width: 40rpx;
-  position: absolute;
-}
-
 .setting-userinfo {
   position: absolute;
   width: 90rpx;
-  top: 40rpx;
+  padding-right: 30rpx;
+  top: 30rpx;
   right: 30rpx;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTM3Mjg2MTM1NDU0IiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDExMTIgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjQ3NDQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTIuMTI1IiBoZWlnaHQ9IjQ4Ij48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwvc3R5bGU+PC9kZWZzPjxwYXRoIGQ9Ik04NDYuMTA3MTE1IDU0Mi4zMDY1NThhNDYuNzEyNDUzIDQ2LjcxMjQ1MyAwIDEgMCA2Ni4wODMyOTItNjYuMTc1OTc2TDQ0OS43MDAwNDYgMTMuNjQwMjIyQTQ2LjcxMjQ1MyA0Ni43MTI0NTMgMCAxIDAgMzgzLjcwOTQzNyA3OS44MTYxOTdsNDYyLjQ5MDM2MSA0NjIuNDkwMzYxeiIgZmlsbD0iI2ZmZmZmZiIgcC1pZD0iNDc0NSI+PC9wYXRoPjxwYXRoIGQ9Ik0zODMuNzA5NDM3IDk0My4zNDc3OThhNDYuNzEyNDUzIDQ2LjcxMjQ1MyAwIDEgMCA2NS45OTA2MDkgNjYuMDgzMjkybDQ2Mi40OTAzNjEtNDYyLjQ5MDM2YTQ2LjcxMjQ1MyA0Ni43MTI0NTMgMCAxIDAtNjYuMDgzMjkyLTY2LjA4MzI5MmwtNDYyLjQ5MDM2MSA0NjIuNDkwMzZ6IiBmaWxsPSIjZmZmZmZmIiBwLWlkPSI0NzQ2Ij48L3BhdGg+PC9zdmc+);
   background-repeat: no-repeat;
   background-position: 90% 56%;
   background-size: 26rpx 26rpx;
+}
+
+.content-wrap, page {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fix-head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 340rpx;
+}
+
+.card-content{
+  padding-top: 340rpx;
+  box-sizing: border-box;
+  overflow-x: scroll;
+}
+
+
+
+.tab-box {
+  height: 100%;
+}
+
+.tab-content {
+  overflow-y: scroll;
+}
+
+
+.user-info-wrap {
+  width: 100%;
+  height: 180rpx;
+  overflow: hidden;
+  position: relative;
+  padding: 20rpx 0;
+}
+
+.userinfo-bg {
+  position: absolute;
+  z-index: -99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220rpx;
+}
+
+.user-info {
+  padding: 20rpx;
+  color: #fff;
+  position: relative;
+}
+
+.user-avatar-wrap, .user-avatar-img {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 8rpx;
+}
+
+.user-avatar-wrap {
+  border: 4rpx #fff solid;
+  position: relative;
+}
+
+.user-name, .user-time {
+  text-indent: 48rpx;
+  background-repeat: no-repeat;
+  background-size: 36rpx 36rpx;
+  background-position: 0% 50%;
+}
+
+.user-name {
+  line-height: 72rpx;
+  height: 72rpx;
+}
+
+.user-time {
+  line-height: 56rpx;
+  height: 56rpx;
+  font-size: 24rpx;
+}
+
+.icon-avatar {
+  position: absolute;
+  bottom: -16rpx;
+  right: -16rpx;
+  width: 36rpx;
+  height: 32rpx;
+  background-size: cover;
+}
+
+.card-tab{
+  height: 120rpx;
+  line-height: 120rpx;
+  color: #cccccc;
+}
+.receive-bg,
+.send-bg{
+  background-size: 90rpx 90rpx;
+  background-position: 20% 50%;
+  background-repeat: no-repeat;
+  width: 50%;
+  box-sizing: border-box;
+  border: 2rpx  #cccccc solid;
+  background-color: #2b2622;
+  text-indent: 160rpx;
+  border-bottom: none;
+}
+
+.receive-bg{
+  border-left: none;
+  background-size: 60rpx 60rpx;
 }

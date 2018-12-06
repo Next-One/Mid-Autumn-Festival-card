@@ -36,14 +36,14 @@
 					"id": 0,
 					"name": "分享进入页面",
 					"pathName": "page/theme/theme",
-					"query": "friendName=喜子&said=中秋节快乐&themeid=1&sendid=oCyNs5c1vWt4wIU72QUdZojWGcWg",
+					"query": "friendName=喜子&content=中秋节快乐&themeid=1&sendid=oCyNs5c1vWt4wIU72QUdZojWGcWg",
 					"scene": "1007"
 				},
 				{
 					"id": -1,
 					"name": "分享进入页面",
 					"pathName": "page/theme/theme",
-					"query": "friendName=喜子&said=中秋节快乐&themeid=3",
+					"query": "friendName=喜子&content=中秋节快乐&themeid=3",
 					"scene": "1008"
 				}
 			]
